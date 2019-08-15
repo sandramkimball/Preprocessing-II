@@ -174,13 +174,13 @@ header {
 }
 header .mainHeader .funBus img {
   padding: 10px 0;
-  border-top: 2px dashed grey;
+  border-top: 2px dashed #C0C0C0;
 }
 header .navigation {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header .navigation .navBar {
   display: flex;
@@ -202,6 +202,12 @@ header .navigation .navBar a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header .navigation,
+.mainHeader {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .home .content-section {
   margin: 30px 0;
@@ -261,10 +267,4 @@ header .navigation .navBar a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header .navigation,
-.mainHeader {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
 }
