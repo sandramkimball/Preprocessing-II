@@ -192,6 +192,21 @@ header .navigation .navBar a {
   font-size: 1.6rem;
   text-decoration: none;
 }
+@media screen and ((max-width: 800px)) {
+  header {
+    max-width: 90%;
+  }
+  header .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navigation .navBar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -267,4 +282,26 @@ header .navigation,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .home {
+    width: 95%;
+  }
+  .home .content-section,
+  .home .inverse-content {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .home .content-section .text-content,
+  .home .inverse-content .text-content {
+    padding: 5% 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .home .content-section .img-content,
+  .home .inverse-content .img-content {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 }

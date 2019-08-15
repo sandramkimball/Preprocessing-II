@@ -70,3 +70,23 @@ header .navigation, .mainHeader{
     }
   }
 }// home
+
+@media screen and (max-width: 800px){
+  .home{
+    width: 95%;
+    .content-section, .inverse-content {
+      flex-wrap: wrap;
+      display: flex;
+      .text-content {
+        padding: 5% 0;
+        width: 100%;
+        justify-content: center;
+      }
+      .img-content {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+      }
+    }
+  }
+}
