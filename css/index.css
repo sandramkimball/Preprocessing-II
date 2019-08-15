@@ -168,6 +168,30 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+header .mainHeader .funBus img {
+  padding: 10px 0;
+  border-top: 2px dashed grey;
+}
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed grey;
+}
+header .navigation .navBar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  justify-content: space-between;
+}
+header .navigation .navBar a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +248,10 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header .navigation,
+.mainHeader {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
