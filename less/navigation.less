@@ -1,1 +1,42 @@
-// Navigation Styles here
+
+header{
+    max-width: 800px;
+    margin: 0 auto;
+    .mainHeader .funBus img{
+        padding: 10px 0;
+        border-top: 2px dashed @navigation-border;}
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 2px dashed @navigation-border;
+        .navBar{
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            justify-content: space-between;
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (@mobile){
+    header{
+        max-width: 90%;
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        // align-items: baseline;
+        .navBar{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            }
+        }
+    }
+}

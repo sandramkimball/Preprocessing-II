@@ -1,1 +1,14 @@
-// Mixins in here
+.buttonFlex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.buttonStyle(@color, @width, @height){
+    background-color: @color;
+    width: @width;
+    height:@height;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;;
+}
