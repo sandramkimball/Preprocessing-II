@@ -62,7 +62,7 @@ header .navigation, .mainHeader{
       margin-bottom: 30px;
       .btn{
         color: white;
-        margin: 1em;
+        margin: 1em auto;
         .buttonStyle(#008080, 100%, 18%);
         .buttonFlex(center, center);
         
@@ -72,11 +72,18 @@ header .navigation, .mainHeader{
 }// home
 
 @media screen and (max-width: 800px){
+  .mainHeader .welcome {
+    width: 95%;
+    margin: 0 auto;
+  }
   .home{
     width: 95%;
-    .content-section, .inverse-content {
-      flex-wrap: wrap;
-      display: flex;
+    .content-section, {
+      margin: 0 10%;
+      padding: 2em;
+      // flex-wrap: wrap;
+      // display: flex;
+      // justify-content: center;
       .text-content {
         padding: 5% 0;
         width: 100%;
@@ -87,6 +94,10 @@ header .navigation, .mainHeader{
         height: auto;
         justify-content: center;
       }
+    }
+    .inverse-content {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
 }
